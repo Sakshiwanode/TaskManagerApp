@@ -8,7 +8,7 @@ interface TaskItemProps {
   task: Task; // Define the type of the task prop
 }
 
-const TaskItem: React.FC<TaskItemProps> = ({ task }) => {
+const TaskItem=({ task }:any) => {
   const dispatch = useDispatch(); // Hook to dispatch actions
 
   const handleComplete = () => {

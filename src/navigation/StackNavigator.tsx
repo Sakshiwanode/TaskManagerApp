@@ -9,8 +9,8 @@ const Stack = createNativeStackNavigator();
 export default function StackNavigator() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={BottomTabNavigator} options={{headerShown:false}}/>
-      <Stack.Screen name="CreateTask" component={CreateTaskScreen} />
+      <Stack.Screen name="Home" component={TopTabNavigator} options={{headerShown:false}}/>
+      <Stack.Screen name="CreateTask" component={CreateTaskScreen} options={{headerShown:false}}/>
     </Stack.Navigator>
   );
 }

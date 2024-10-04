@@ -14,19 +14,20 @@ export default function BottomTabNavigator() {
       <Tab.Screen 
         name="AllTasks" 
         component={AllTasksScreen} 
-        options={{ tabBarIcon: () => <Icon name="tasks" size={20} color='pink' /> }}
+        options={{ tabBarIcon: () => <Icon name="tasks" size={20} color='pink' /> ,headerShown: false }}
+        
      
       />
        <Tab.Screen 
         name="Create Task" 
         component={CreateTaskScreen} 
-        options={{ tabBarIcon: () => <Icon name="pencil" size={20} color='pink' /> }}
+        options={{ tabBarIcon: () => <Icon name="pencil" size={20} color='pink' /> ,headerShown: false}}
       /> 
 
       <Tab.Screen 
         name="CompletedTasks" 
         component={CompletedTasksScreen} 
-        options={{ tabBarIcon: () => <Icon name="check" size={20} color='pink' /> }}
+        options={{ tabBarIcon: () => <Icon name="check" size={20} color='pink' />,headerShown: false }}
       />
      
     </Tab.Navigator>
